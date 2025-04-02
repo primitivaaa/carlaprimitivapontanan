@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="nav-home">Home</button>
+        <button id="nav-portfolio">Portfolio</button>
+        <button id="nav-favorites">Favorites</button>
+        <button id="nav-close">Close</button>
+    </nav>
+
+    <section id="home" class="section active">
+        <div class="content-wrapper">
+            <h1><span>Hi, I'm Carla Primitiva C. Pontanan!</span></h1>
+            <p class="tagline">A Passionate Learner with a Creative Mind</p>
+            <p class="bio">I’m a dedicated student at Cebu Technological University, where I’m <em>shaking off</em> challenges (thanks, Taylor Swift!) while mastering coding and web development. This website is my <em>Love Story</em>—a digital canvas where I blend tech and creativity to craft <em>Enchanted</em> experiences. When I’m not debugging code in a <em>Midnight</em> coding session, you’ll catch me capturing the world through my camera lens, sketching designs inspired by nature, or getting lost in sci-fi novels that spark my <em>Wildest Dreams</em>. I’m a coffee enthusiast who believes a good brew can fix almost anything—call it my <em>Blank Space</em> for inspiration! My mission? To build innovative web solutions that <em>Sparks Fly</em> and bring joy to everyone who visits.</p>
+            <div class="carousel">
+                <button class="carousel-prev">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-slides">
+                        <div class="carousel-item">
+                            <img src="images/profile1.jpg" alt="Profile 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile2.jpg" alt="Profile 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile3.jpg" alt="Profile 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile4.jfif" alt="Profile 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/profile5.jpg" alt="Profile 5">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-next">❯</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="section">
+        <div class="content-wrapper">
+            <h2>Brain Master Challenge</h2>
+            <p class="portfolio-intro">Test your skills with these fun challenges! Pick a function to get started.</p>
+            <div class="challenge-selector">
+                <h3>Pick your Choice:</h3>
+                <button id="challenge-temperature">1. Temperature Converter (5 pts)</button>
+                <button id="challenge-longerWord">2. The Longer Word (5 pts)</button>
+                <button id="challenge-birthstone">3. Know My Birthstone (7 pts)</button>
+                <button id="challenge-operators">4. Basic Operators (7 pts)</button>
+                <button id="challenge-acceleration">5. Compute for Acceleration (8 pts)</button>
+            </div>
+
+
+            <div id="temperature" class="challenge">
+                <h4>Temperature Converter</h4>
+                <label for="tempInput">Enter temperature in Celsius:</label>
+                <input type="number" id="tempInput" placeholder="e.g., 25">
+                <button id="convert-temp">Convert</button>
+                <p id="tempResult">Result will appear here.</p>
+            </div>
+
+            <div id="longerWord" class="challenge">
+                <h4>The Longer Word</h4>
+                <label for="word1">Enter first word:</label>
+                <input type="text" id="word1" placeholder="e.g., apple">
+                <label for="word2">Enter second word:</label>
+                <input type="text" id="word2" placeholder="e.g., banana">
+                <button id="compare-words">Compare</button>
+                <p id="wordResult">Result will appear here.</p>
+            </div>
+
+            <div id="birthstone" class="challenge">
+                <h4>Know My Birthstone</h4>
+                <label for="birthMonth">Select your birth month:</label>
+                <select id="birthMonth">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <button id="find-birthstone">Find Birthstone</button>
+                <p id="birthstoneResult">Result will appear here.</p>
+            </div>
+
+            <div id="operators" class="challenge">
+                <h4>Basic Operators</h4>
+                <label for="num1">Enter first number:</label>
+                <input type="number" id="num1" placeholder="e.g., 10">
+                <label for="num2">Enter second number:</label>
+                <input type="number" id="num2" placeholder="e.g., 5">
+                <label for="operator">Select operator:</label>
+                <select id="operator">
+                    <option value="add">Add (+)</option>
+                    <option value="subtract">Subtract (-)</option>
+                    <option value="multiply">Multiply (×)</option>
+                    <option value="divide">Divide (÷)</option>
+                </select>
+                <button id="calculate">Calculate</button>
+                <p id="operatorResult">Result will appear here.</p>
+            </div>
+
+            <div id="acceleration" class="challenge">
+                <h4>Compute for Acceleration</h4>
+                <label for="velocity">Enter final velocity (m/s):</label>
+                <input type="number" id="velocity" placeholder="e.g., 20">
+                <label for="time">Enter time (s):</label>
+                <input type="number" id="time" placeholder="e.g., 4">
+                <button id="compute-acceleration">Compute</button>
+                <p id="accelerationResult">Result will appear here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites Section -->
+    <section id="favorites" class="section">
+        <div class="content-wrapper">
+            <h2>My Favorites</h2>
+            <p class="portfolio-intro">A gallery of things I love—feel free to like and comment!</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/alegria.jpg" alt="Favorite 1">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/digi.jfif" alt="Favorite 2">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/osmena.jpg" alt="Favorite 3">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/us.jfif" alt="Favorite 4">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/1stflower.jpg" alt="Favorite 5">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/fave.jfif" alt="Favorite 6">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/xmas.jpg" alt="Favorite 7">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/2a.jpg" alt="Favorite 8">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/makeup.jpg" alt="Favorite 9">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/usgae.jpg" alt="Favorite 10">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/magazine.jpg" alt="Favorite 11">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="images/bayot.jpg" alt="Favorite 12">
+                        <div class="heart-container">
+                            <span class="heart">♡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-actions">
+                        <p class="like-count">0 likes</p>
+                    </div>
+                    <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post</button>
+                    <div class="comments"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
